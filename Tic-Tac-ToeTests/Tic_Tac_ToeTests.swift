@@ -36,8 +36,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         
         // then
         XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong") /// Pass test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
     }
     func testSecondRowPlayerOneWin() {
         // given
@@ -48,8 +48,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         
         // then
         XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong") /// Pass test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
     }
     func testThirdRowPlayerOneWin() {
         // given
@@ -60,8 +60,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         
         // then
         XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong") /// Pass test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
     }
     
     func testFirstRowPlayerTwoWin() {
@@ -72,8 +72,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkRow(theRow: 0)
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
     func testSecondRowPlayerTwoWin() {
@@ -84,8 +84,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkRow(theRow: 1)
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
     func testThirdRowPlayerTwoWin() {
@@ -96,8 +96,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkRow(theRow: 2)
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
     
@@ -112,8 +112,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         
         // then
         XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Pass test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is wrong")   /// Failed test
     }
     
 
@@ -127,8 +127,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkColumn(theColumn: 2) /// arrays index start at 0
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
 
@@ -143,8 +143,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         
         // then
         XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Pass test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
     }
     func testDiagonalPlayerTwoWin() {
         // given
@@ -156,8 +156,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkDiagonalInvert()
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")       /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")       /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
     
@@ -171,8 +171,8 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkWinner()
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
-        XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")       /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")       /// Failed test
         XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Pass test
     }
     
@@ -187,9 +187,9 @@ class Tic_Tac_ToeTests: XCTestCase {
         let result = gameModel.checkWinner()
         
         // then
-        XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "X","Winner computed from gameBoard is Wrong")   /// Failed test
         XCTAssertEqual(result, "Draw","Draw computed from gameBoard is Wrong")       /// Pass test
-        XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
+        //XCTAssertEqual(result, "O","Winner computed from gameBoard is Wrong")   /// Failed test
     }
     
     
