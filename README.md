@@ -27,6 +27,7 @@ Project is created with:
 * Xcode version: 12.5
 * Swift version: 5.4
 * Design Patterns used: Singleton pattern & MVC
+* TDD & CleanCode
 
 ## Setup
 To run this project, close it locally and then run.
@@ -66,3 +67,6 @@ Project consist of a
   - `checkDiagonal` starts from [0][0] and get its state (`0`,`X`,`O`) and goes to the next cell in Diagonal wich is [1][1] and go on [2][2] etc. 
   - `checkDiagonalInvert` starts from the last cell of the first row, and iterate through all other cells in reverse Diagonal. ( 1st cell => `[0][2]`, 2nd cell => `[1][1]`, 3rd cell => `[2][0]`)
   - In all these methods if it finds that all elements are the same, then we have a winner and it return it's element. if not, it returns `0`.
+
+### TDD
+For each method in `GameModel`, there is a `TestCase` and each one contains 3 `XCTAssert` to check each state of that method.
